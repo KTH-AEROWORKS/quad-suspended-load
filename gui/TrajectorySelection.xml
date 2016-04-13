@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="Trajectory Selection Plugin" type="gui.TrajectorySelection.TrajectorySelectionPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A window where you can choose trajectory to be followed
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Trajectory Selection</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

@@ -1,0 +1,6 @@
+int32 trajectory
+float64[3] offset
+float64[3] rotation
+float64[] parameters
+---
+bool received

@@ -1,0 +1,4 @@
+#Get the body data from mocap
+uint8 id
+---
+QuadPosition pos

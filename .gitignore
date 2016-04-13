@@ -1,0 +1,9 @@
+# python byte code
+*.pyc
+# top level CMakeLists should be created with catkin_init_workspace
+/CMakeLists.txt
+# gedit backup files
+*~
+#GitEye project file
+.project
+

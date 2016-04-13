@@ -1,0 +1,28 @@
+<launch>
+  <arg name="simulation" default="$(env SIMULATION)"/>
+
+<!-- REAL QUAD -->
+  <group unless="$(arg simulation)">
+  	
+  	  <!-- Set the frequency of the mocap publish rate -->
+      <rosparam param="/frequency">20.</rosparam>
+
+      <!-- Add a body tracked by mocap -->
+      <!-- The identifier correspond to the position of the body that appears in the Qualisys list -->
+      <!-- To add a body, add the Qualisys id and the name of the body (I am not sure that the names are still used) -->
+	  <rosparam param="/body_array">[13,21,12,18,20]</rosparam>
+	  <rosparam param="/body_names">["iris1","iris2","iris3","iris4","iris5"]</rosparam>
+
+	  <!-- Launch the mocap node -->
+	  <node name="ros_mocap" pkg="mocap" type="ros_mocap.py" respawn="true" output="screen">
+	  </node>
+
+    <!-- Launch the data recording node -->
+    <!--
+    <node name="recorder" pkg="mocap" type="recorder.py" respawn="false" output="screen">
+	  </node>
+    -->
+
+  </group>
+
+</launch> 

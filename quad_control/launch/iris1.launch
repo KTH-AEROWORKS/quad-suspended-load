@@ -1,0 +1,42 @@
+<launch>
+
+  <group ns="Iris1">
+    
+    <!-- Controller Node -->
+    <node pkg="quad_control" name="controller_Iris1" type="cycle_quad_control.py"/>
+
+    <!-- Controller parameters -->
+    <param name="gravity_ctr" value="9.81"/>
+    <param name="mass_quad_ctr" value="1.442"/>
+    <param name="Throttle_neutral_ctr" value="1484.0"/>  
+    <param name="ACRO_RP_P_ctr" value="4.5"/> 
+    <param name="ktt" value="20.0"/> 
+    <param name="ktt2" value="30.0"/>
+    <!--  SOME USEFUL RULES: kp = wn*wn  AND kv = 2 xsi wn--> 
+    <param name="kv" value="1.0"/> 
+    <param name="kp" value="1.4"/> 
+    <param name="sigma_p" value="0.5"/> 
+    <param name="sigma_v" value="0.5"/> 
+
+    <!-- Simulator Node -->
+    <node pkg="quad_control" name="Simulator_Iris1" type="Quad_Simulator.py"/>
+
+    <!-- Simulator parameters -->
+    <param name="gravity_sim" value="9.81"/>
+    <param name="mass_quad_sim" value="1.442"/>
+    <param name="Throttle_neutral_sim" value="1484.0"/>  
+    <param name="ACRO_RP_P_sim" value="4.5"/> 
+    <param name="ktt_inner_loop" value="10.0"/> 
+
+
+    <!-- PARAMETERS THAT ARE COMMOM BETWEEN CONTROLLER AND SIMULATOR -->
+    <!-- see WEB: ARDUCOPTER DIFFERENT MODES PARAMETERS -->
+    <param name="MAX_ANGLE_DEG" value="45.0"/> 
+    <param name="MAX_PSI_SPEED_Deg" value="200.0"/> 
+
+  </group>
+
+  <!-- Planner Node -->
+  <node pkg="quad_control" name="planner_Iris1" type="command_planner.py" output="screen"/>
+
+</launch>

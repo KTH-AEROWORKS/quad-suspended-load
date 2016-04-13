@@ -1,0 +1,24 @@
+<launch>
+
+  <group ns="Iris1">
+    <node pkg="quad_control" name="controller_Iris1" type="cycle_quad_control.py"/>
+    <node pkg="quad_control" name="Simulator_Iris1" type="Quad_Simulator.py"/>
+  </group>
+
+  <group ns="Iris2">
+    <node pkg="quad_control" name="controller_Iris2" type="cycle_quad_control.py"/>
+    <node pkg="quad_control" name="Simulator_Iris2" type="Quad_Simulator.py"/>
+  </group>
+
+<!-- 
+  <group ns="turtlesim2">
+    <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+  </group> 
+-->
+
+<!--   <node pkg="turtlesim" name="mimic" type="mimic">
+    <remap from="input" to="turtlesim1/turtle1"/>
+    <remap from="output" to="turtlesim2/turtle1"/>
+  </node> -->
+
+</launch>

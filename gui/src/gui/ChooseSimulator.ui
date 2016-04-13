@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QPushButton" name="SetSimulatorButton">
+     <property name="text">
+      <string>Set Simulator</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QRadioButton" name="Success">
+     <property name="text">
+      <string>Success</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QTabWidget" name="SimulatorSelect">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Full Actuation Model</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>321</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Some Parameters</string>
+       </property>
+       <widget class="QDoubleSpinBox" name="AttitudeGain">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="Mass">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mass</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>121</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Attitude Gain</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="ThrottleNeutral">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>1400.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1600.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>90</y>
+          <width>121</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Throtle Neutral</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>401</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>In this model, attitude is controlled via an inner loop</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>70</y>
+         <width>391</width>
+         <height>231</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Not Fully Actuated</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>90</y>
+         <width>231</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Some Parameters</string>
+       </property>
+       <widget class="QDoubleSpinBox" name="ThrottleNeutral_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>1400.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1600.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="Mass_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mass</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>141</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Throttle Neutral</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>40</y>
+         <width>341</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>No Attitude Inner Loop</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QRadioButton" name="Failure">
+     <property name="text">
+      <string>Failure</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

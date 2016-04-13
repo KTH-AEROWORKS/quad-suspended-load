@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My Saver Plugin" type="gui.saver_mavros.saver_mavrosPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A GUI plugin for connecting with simulator or Qualisys and Mavros
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Mavros/Simulator</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My Position Plot Plugin" type="gui.positionPlot.positionPlotPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A window where you can plot position and velocity in real time.
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Position plot</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

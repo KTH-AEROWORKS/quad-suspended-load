@@ -1,0 +1,3 @@
+# Get the body list from mocap
+---
+int8[] list

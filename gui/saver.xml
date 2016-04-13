@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My Saver Plugin" type="gui.saver.saverPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A GUI plugin allowing data to be saved
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Data recording plugin</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My Tab GUI Plugin" type="gui.tabbedGUI.tabbedGUIPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A multitabbed GUI with the functionality of GUI-plugins developed earlier
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Tabbed GUI plugin</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

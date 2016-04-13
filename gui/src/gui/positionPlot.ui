@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1266</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="1">
+    <widget class="QCheckBox" name="Xcheck">
+     <property name="text">
+      <string>x</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QCheckBox" name="Xdcheck">
+     <property name="text">
+      <string>xd</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QCheckBox" name="Ydcheck">
+     <property name="text">
+      <string>yd</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QCheckBox" name="Ycheck">
+     <property name="text">
+      <string>y</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QCheckBox" name="Zdcheck">
+     <property name="text">
+      <string>zd</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="1">
+    <widget class="QCheckBox" name="Roll_check">
+     <property name="text">
+      <string>Roll</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QCheckBox" name="ButtonSubscribe">
+     <property name="text">
+      <string>Connect</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="2">
+    <widget class="QCheckBox" name="Pitch_check">
+     <property name="text">
+      <string>Pitch</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="3">
+    <widget class="QCheckBox" name="Yaw_check">
+     <property name="text">
+      <string>Yaw</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="1">
+    <widget class="QCheckBox" name="Rolld_check">
+     <property name="text">
+      <string>Roll_d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="2">
+    <widget class="QCheckBox" name="Pitchd_check">
+     <property name="text">
+      <string>Pitch_d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="3">
+    <widget class="QCheckBox" name="Yawd_check">
+     <property name="text">
+      <string>Yaw_d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QCheckBox" name="ButtonRequestSave">
+     <property name="text">
+      <string>Save Data</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="4">
+    <widget class="QCheckBox" name="Xvelcheck">
+     <property name="text">
+      <string>v_x</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="QCheckBox" name="Yvelcheck">
+     <property name="text">
+      <string>v_y</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QCheckBox" name="Zcheck">
+     <property name="text">
+      <string>z</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="6">
+    <widget class="QCheckBox" name="Zvelcheck">
+     <property name="text">
+      <string>v_z</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4" colspan="3">
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="3">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <widget class="QCheckBox" name="Xdvelcheck">
+     <property name="text">
+      <string>v_x d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="5">
+    <widget class="QCheckBox" name="Ydvelcheck">
+     <property name="text">
+      <string>v_y d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="6">
+    <widget class="QCheckBox" name="Zdvelcheck">
+     <property name="text">
+      <string>v_z d</string>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="1" colspan="3">
+    <widget class="QFrame" name="frame_3">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="19" column="4" colspan="3">
+    <widget class="QFrame" name="frame_4">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="4">
+    <widget class="QCheckBox" name="Ch1check">
+     <property name="text">
+      <string>channel 1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="20" column="5">
+    <widget class="QCheckBox" name="Ch2check">
+     <property name="text">
+      <string>channel 2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="5">
+    <widget class="QCheckBox" name="Ch4check">
+     <property name="text">
+      <string>channel 4</string>
+     </property>
+    </widget>
+   </item>
+   <item row="21" column="4">
+    <widget class="QCheckBox" name="Ch3check">
+     <property name="text">
+      <string>channel 3</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

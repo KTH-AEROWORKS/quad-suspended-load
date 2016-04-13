@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>339</width>
+    <height>184</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="2">
+    <widget class="QComboBox" name="IrisInputBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Quad:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="bStart">
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>x-position:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QDoubleSpinBox" name="XBox"/>
+   </item>
+   <item row="6" column="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>y-position:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QDoubleSpinBox" name="YBox"/>
+   </item>
+   <item row="9" column="2">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>z-position:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="3">
+    <widget class="QDoubleSpinBox" name="ZBox"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Gravity cancel:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QSpinBox" name="GravitySpinBox"/>
+   </item>
+   <item row="3" column="3">
+    <widget class="QPushButton" name="GravityCancelButton">
+     <property name="text">
+      <string>set Gravity cancel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

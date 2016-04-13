@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="Adaptative Control Plugin" type="gui.LinearAdaptativeControl.LinearAdaptativeControl" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      Linear Adaptative Control plugin.
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Linear Adaptative Control plugin</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Linear Adaptative Control plugin.</statustip>
+    </qtgui>
+  </class>
+</library>

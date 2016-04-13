@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Instructions:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>Dxf files:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>File name:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QLineEdit" name="FileInput"/>
+   </item>
+   <item row="12" column="1">
+    <widget class="QComboBox" name="DXFInputBox"/>
+   </item>
+   <item row="12" column="2">
+    <widget class="QPushButton" name="LoadButton">
+     <property name="text">
+      <string>Load trajectory</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="2">
+    <widget class="QPushButton" name="RemovePointButton">
+     <property name="text">
+      <string>Remove instruction</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QComboBox" name="Pointlist"/>
+   </item>
+   <item row="13" column="2">
+    <widget class="QPushButton" name="SaveButton">
+     <property name="text">
+      <string>Save trajectory</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QDoubleSpinBox" name="WaitBox"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>Waiting time:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="IrisInputBox"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>Quad:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="bStart">
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>x-position:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QDoubleSpinBox" name="XBox"/>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>y-position:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QDoubleSpinBox" name="YBox"/>
+   </item>
+   <item row="10" column="2">
+    <widget class="QPushButton" name="AddPointButton">
+     <property name="text">
+      <string>Add point</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="2">
+    <widget class="QPushButton" name="LoadActionsButton">
+     <property name="text">
+      <string>Load actions</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="2">
+    <widget class="QPushButton" name="SaveActionsButton">
+     <property name="text">
+      <string>Save actions</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QComboBox" name="ActionInputBox"/>
+   </item>
+   <item row="15" column="1">
+    <widget class="QLineEdit" name="ActionFileInput"/>
+   </item>
+   <item row="14" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Action files:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>File name:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="AddWaitButton">
+     <property name="text">
+      <string>Add waiting time</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>z-position:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QDoubleSpinBox" name="ZBox"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,205 @@
+{
+  "keys": {}, 
+  "groups": {
+    "pluginmanager": {
+      "keys": {
+        "running-plugins": {
+          "type": "repr", 
+          "repr": "{u'rqt_plot/Plot': [3, 2, 1]}"
+        }
+      }, 
+      "groups": {
+        "plugin__rqt_plot__Plot__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__DataPlotWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "autoscroll": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "plot_type": {
+                  "type": "repr", 
+                  "repr": "1"
+                }, 
+                "topics": {
+                  "type": "repr", 
+                  "repr": "[u'/iris1/error_vis/z_coord/target', u'/iris1/error_vis/z_coord/quad_pos']"
+                }, 
+                "y_limits": {
+                  "type": "repr", 
+                  "repr": "[0.0, 1.0]"
+                }, 
+                "x_limits": {
+                  "type": "repr", 
+                  "repr": "[190.25, 191.25]"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_plot__Plot__2": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__DataPlotWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "autoscroll": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "plot_type": {
+                  "type": "repr", 
+                  "repr": "1"
+                }, 
+                "topics": {
+                  "type": "repr", 
+                  "repr": "[u'/iris1/error_vis/y_coord/target', u'/iris1/error_vis/y_coord/quad_pos']"
+                }, 
+                "y_limits": {
+                  "type": "repr", 
+                  "repr": "[0.0, 2.5]"
+                }, 
+                "x_limits": {
+                  "type": "repr", 
+                  "repr": "[190.56499999999994, 191.56499999999994]"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__rqt_plot__Plot__3": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__DataPlotWidget": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }, 
+            "plugin": {
+              "keys": {
+                "autoscroll": {
+                  "type": "repr", 
+                  "repr": "True"
+                }, 
+                "plot_type": {
+                  "type": "repr", 
+                  "repr": "1"
+                }, 
+                "topics": {
+                  "type": "repr", 
+                  "repr": "[u'/iris1/error_vis/x_coord/quad_pos', u'/iris1/error_vis/x_coord/target']"
+                }, 
+                "y_limits": {
+                  "type": "repr", 
+                  "repr": "[-0.8052725503309509, 5.030259461978731]"
+                }, 
+                "x_limits": {
+                  "type": "repr", 
+                  "repr": "[173.8223892131029, 191.78999999999996]"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__gui__My Step Plugin__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__StepPluginUi": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "u'true'"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }, 
+        "plugin__gui__My Plugin__1": {
+          "keys": {}, 
+          "groups": {
+            "dock_widget__MyPluginUi": {
+              "keys": {
+                "dockable": {
+                  "type": "repr", 
+                  "repr": "u'true'"
+                }, 
+                "parent": {
+                  "type": "repr", 
+                  "repr": "None"
+                }
+              }, 
+              "groups": {}
+            }
+          }
+        }
+      }
+    }, 
+    "mainwindow": {
+      "keys": {
+        "geometry": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('01d9d0cb000100000000004100000034000003df000004af0000004100000034000003df000004af000000000000')", 
+          "pretty-print": "     A 4     A 4       "
+        }, 
+        "state": {
+          "type": "repr(QByteArray.hex)", 
+          "repr(QByteArray.hex)": "QtCore.QByteArray('000000ff00000000fd00000001000000030000039f0000044dfc0100000004fb0000003a006700750069005f005f004d007900200050006c007500670069006e005f005f0031005f005f004d00790050006c007500670069006e005500690100000000000000f60000000000000000fb0000003a006700750069005f005f004d007900200050006c007500670069006e005f005f0032005f005f004d00790050006c007500670069006e00550069010000013b0000011d0000000000000000fb00000048006700750069005f005f004d00790020005300740065007000200050006c007500670069006e005f005f0031005f005f00530074006500700050006c007500670069006e00550069020000004100000042000001e500000130fc000000000000039f000002f400fffffffc0100000002fb00000042007200710074005f0070006c006f0074005f005f0050006c006f0074005f005f0031005f005f00440061007400610050006c006f00740057006900640067006500740100000000000001af0000017700fffffffc000001b5000001ea0000017700fffffffc0200000002fb00000042007200710074005f0070006c006f0074005f005f0050006c006f0074005f005f0032005f005f00440061007400610050006c006f00740057006900640067006500740100000019000002330000008c00fffffffb00000042007200710074005f0070006c006f0074005f005f0050006c006f0074005f005f0033005f005f00440061007400610050006c006f00740057006900640067006500740100000252000002140000008c00ffffff0000039f0000000000000004000000040000000800000008fc00000001000000030000000100000036004d0069006e0069006d0069007a006500640044006f0063006b00570069006400670065007400730054006f006f006c0062006100720000000000ffffffff0000000000000000')", 
+          "pretty-print": "                 :gui__My Plugin__1__MyPluginUi          :gui__My Plugin__2__MyPluginUi          Hgui__My Step Plugin__1__StepPluginUi                                                             w               Brqt_plot__Plot__2__DataPlotWidget          Brqt_plot__Plot__3__DataPlotWidget                            6MinimizedDockWidgetsToolbar        "
+        }
+      }, 
+      "groups": {
+        "toolbar_areas": {
+          "keys": {
+            "MinimizedDockWidgetsToolbar": {
+              "type": "repr", 
+              "repr": "8"
+            }
+          }, 
+          "groups": {}
+        }
+      }
+    }
+  }
+}

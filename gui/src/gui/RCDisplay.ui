@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>496</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <property name="leftMargin">
+    <number>9</number>
+   </property>
+   <item row="4" column="1">
+    <widget class="QLineEdit" name="channel3display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="channel4display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="channel5display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="channel6display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QLineEdit" name="channel7display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>channel 2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>channel 1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QLineEdit" name="channel8display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>channel 3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>channel 4</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>channel 5</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string>channel 6</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>channel 7</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="text">
+      <string>channel 8</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="channel1display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="channel2display">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QProgressBar" name="channel1bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QProgressBar" name="channel2bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QProgressBar" name="channel3bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QProgressBar" name="channel4bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QProgressBar" name="channel5bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QProgressBar" name="channel6bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QProgressBar" name="channel7bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QProgressBar" name="channel8bar">
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="IrisInputBox"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="ListenButton">
+     <property name="text">
+      <string>Listen</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0" colspan="3">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="2">
+    <widget class="QProgressBar" name="Batterybar">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="format">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>Battery voltage</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="QLineEdit" name="Batterydisplay">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

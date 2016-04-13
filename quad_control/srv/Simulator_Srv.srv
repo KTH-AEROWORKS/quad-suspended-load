@@ -1,0 +1,4 @@
+int32 flag_simulator
+float64[] parameters
+---
+bool received

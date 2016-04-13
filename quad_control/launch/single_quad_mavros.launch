@@ -1,0 +1,69 @@
+<launch>
+    <group ns="Iris1">
+
+	<!-- vim: set ft=xml noet : -->
+
+	<!-- from apm2.launch -->
+	<!-- example launch script for ArduPilotMega based FCU's -->
+
+	<arg name="fcu_url" default="/dev/ttyUSB0:57600" />
+	<arg name="gcs_url" default="" />
+	<arg name="tgt_system" default="1" />
+	<arg name="tgt_component" default="1" />
+	<arg name="log_output" default="screen" />
+
+	<include file="$(find mavros)/launch/node.launch">
+		<arg name="pluginlists_yaml" value="$(find mavros)/launch/apm_pluginlists.yaml" />
+		<arg name="config_yaml" value="$(find mavros)/launch/apm_config.yaml" />
+
+		<arg name="fcu_url" value="$(arg fcu_url)" />
+		<arg name="gcs_url" value="$(arg gcs_url)" />
+		<arg name="tgt_system" value="$(arg tgt_system)" />
+		<arg name="tgt_component" value="$(arg tgt_component)" />
+		<arg name="log_output" value="$(arg log_output)" />
+	</include>
+
+	
+
+	<!-- from iris1_mavros.launch: -->
+
+	<!-- Controller Node -->
+    <node pkg="quad_control" name="controller_Iris1" type="cycle_quad_control_mavros.py"/>
+
+    <!-- Controller parameters -->
+    <param name="gravity_ctr" value="9.81"/>
+    <param name="mass_quad_ctr" value="1.442"/>
+    <param name="Throttle_neutral_ctr" value="1484.0"/>  
+    <param name="ACRO_RP_P_ctr" value="4.5"/> 
+    <param name="ktt" value="20.0"/> 
+    <param name="ktt2" value="30.0"/>
+    <!--  SOME USEFUL RULES: kp = wn*wn  AND kv = 2 xsi wn--> 
+    <param name="kv" value="1.0"/> 
+    <param name="kp" value="1.4"/> 
+    <param name="sigma_p" value="0.5"/> 
+    <param name="sigma_v" value="0.5"/> 
+
+    <!-- Simulator Node -->
+    <node pkg="quad_control" name="Simulator_Iris1" type="Quad_Simulator.py"/>
+
+    <!-- Simulator parameters -->
+    <param name="gravity_sim" value="9.81"/>
+    <param name="mass_quad_sim" value="1.442"/>
+    <param name="Throttle_neutral_sim" value="1484.0"/>  
+    <param name="ACRO_RP_P_sim" value="4.5"/> 
+    <param name="ktt_inner_loop" value="10.0"/> 
+
+
+    <!-- PARAMETERS THAT ARE COMMOM BETWEEN CONTROLLER AND SIMULATOR -->
+    <!-- see WEB: ARDUCOPTER DIFFERENT MODES PARAMETERS -->
+    <param name="MAX_ANGLE_DEG" value="45.0"/> 
+    <param name="MAX_PSI_SPEED_Deg" value="200.0"/>
+
+    </group>
+
+    <!-- Planner Node -->
+    <node pkg="quad_control" name="planner_Iris1" type="command_planner.py" output="screen"/>
+
+    <node pkg="rqt_gui" name="gui_Iris1" type="rqt_gui" args="-s tabbedGUI --args Iris1/"/>
+    
+</launch>

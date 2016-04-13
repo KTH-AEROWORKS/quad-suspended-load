@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="1">
+    <widget class="QRadioButton" name="Failure">
+     <property name="text">
+      <string>Failure</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="SetControllerButton">
+     <property name="text">
+      <string>Set Desired Controller</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QRadioButton" name="Success">
+     <property name="text">
+      <string>Success</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QTabWidget" name="ControllerSelect">
+     <property name="contextMenuPolicy">
+      <enum>Qt::NoContextMenu</enum>
+     </property>
+     <property name="currentIndex">
+      <number>3</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>PD Controller</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>191</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>X and Y</string>
+       </property>
+       <widget class="QDoubleSpinBox" name="DgainXY">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="PgainXY">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>140</y>
+         <width>191</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Z</string>
+       </property>
+       <widget class="QDoubleSpinBox" name="DgainZ">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="PgainZ">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QDoubleSpinBox" name="ThrottleNeutral">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>320</y>
+         <width>69</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="minimum">
+        <double>1400.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>1600.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>1484.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>320</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Throttle Neutral</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>PID Controller</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>231</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>X and Y</string>
+       </property>
+       <widget class="QDoubleSpinBox" name="DgainXY_PID">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="PgainXY_PID">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="IgainXY_PID">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>90</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Reset_Int_XY">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>90</y>
+          <width>99</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset Int</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Start_Int_XY">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>60</y>
+          <width>99</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Start Int</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>231</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Z</string>
+       </property>
+       <widget class="QDoubleSpinBox" name="DgainZ_PID">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="PgainZ_PID">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>30</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="IgainZ_PID">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>69</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>90</y>
+          <width>67</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Reset_Int_Z">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>90</y>
+          <width>99</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reset Int</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>60</y>
+          <width>99</width>
+          <height>27</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Start Int</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QDoubleSpinBox" name="ThrottleNeutral_PID">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>370</y>
+         <width>69</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="minimum">
+        <double>1000.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>1600.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>1484.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>370</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Throttle Neutral</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>70</y>
+         <width>451</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="ButtonCtrStateSubscribe">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>40</y>
+         <width>97</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Subscribe</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="PID_OPTION">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>480</y>
+         <width>61</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>2</number>
+       </property>
+       <property name="value">
+        <number>2</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>480</y>
+         <width>161</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Option 1: Unbounded U</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>510</y>
+         <width>171</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Option 2: Bounded U</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>450</y>
+         <width>181</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Default Gains</string>
+       </property>
+       <widget class="QRadioButton" name="GainsOption1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>117</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Option 1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="GainsOption2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>117</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Option 2</string>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="GainsOption3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>117</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Option 3</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>ACRO Controller</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tabLoad">
+      <attribute name="title">
+       <string>Load Controller</string>
+      </attribute>
+      <widget class="QDoubleSpinBox" name="ThrottleNeutralLoad">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="minimum">
+        <double>1000.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>1600.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>1484.000000000000000</double>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>30</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Throttle Neutral</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

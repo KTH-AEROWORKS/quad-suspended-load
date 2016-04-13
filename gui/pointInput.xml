@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My pointInput Plugin" type="gui.pointInput.pointInputPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A GUI where the user can input destination points for the drone to go to.
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>User interface plugin</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

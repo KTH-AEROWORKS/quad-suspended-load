@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My Utility Plugin" type="gui.utility.utilityPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A convenient plugin for testing
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>Utility</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

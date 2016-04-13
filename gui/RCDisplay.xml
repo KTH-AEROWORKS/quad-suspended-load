@@ -1,0 +1,16 @@
+<library path="src">
+  <class name="My RCDisplay Plugin" type="gui.RCDisplay.RCDisplayPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      An example Python GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+      <group>
+        <label>Iris</label>
+        <icon type="theme">folder</icon>
+      </group>
+      <label>RCDisplay</label>
+      <icon type="theme">applications-science</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
